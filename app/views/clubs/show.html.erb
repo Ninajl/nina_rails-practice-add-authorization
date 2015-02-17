@@ -10,7 +10,9 @@
     </tr>
   </thead>
   <tbody>
+
     <% @club.participations.each do |participation| %>
+  
     <tr>
       <td><%= link_to participation.student.name, participation.student %></td>
       <td><%= participation.leader %></td>

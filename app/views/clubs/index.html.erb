@@ -12,7 +12,9 @@
     <% @clubs.each do |club| %>
     <tr>
       <td>
+        <% if current_student %>
         <%= link_to club.name, club %>
+        <% end %>
       </td>
     </tr>
     <% end %>

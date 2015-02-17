@@ -13,7 +13,9 @@
     <% @students.each do |student| %>
     <tr>
       <td>
+        <% if current_student %>
         <%= link_to student.name, student %>
+        <% end %>
       </td>
       <td>
         <%= student.email %>
