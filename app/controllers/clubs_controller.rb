@@ -1,7 +1,7 @@
 class ClubsController < ApplicationController
   before_action :authenticate
   def index
-    @clubs = Club.all
+    @clubs = current_student.clubs
   end
 
   def show
